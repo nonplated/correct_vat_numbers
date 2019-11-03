@@ -1,13 +1,5 @@
 from functions_ready import *
 
-def getOnlyDigits(txt):
-   return getOnlyThisChars(txt,'0123456789')
-
-def getOnlyUpperLetters(txt):
-   return getOnlyThisChars(txt,'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-
-def getOnlyThisChars(txt,chars=''):
-   return ''.join([ch for ch in str(txt) if ch in chars])
 
 #testing
 valid_numbers = [
