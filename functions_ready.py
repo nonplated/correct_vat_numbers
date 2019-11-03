@@ -1,3 +1,4 @@
+##############################################################################
 
 def getOnlyDigits(txt):
    return getOnlyThisChars(txt,'0123456789')
@@ -7,7 +8,8 @@ def getOnlyUpperLetters(txt):
 
 def getOnlyThisChars(txt,chars=''):
    return ''.join([ch for ch in str(txt) if ch in chars])
-   
+
+##############################################################################
 
 def isVATCorrectFR(txt): # FRANCE
    return len(txt)==11 and txt[:2]==('0'+str((12+3*(int(str(txt)[2:])%97))%97))[-2:]
@@ -46,3 +48,4 @@ def isVATCorrectSE(txt): #SWEDEN
    checksum = sum([int(x) for x in sum_str])
    return len(txt)==12 and txt[-3]==chr(10-checksum%10+48)
 
+##############################################################################
