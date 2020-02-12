@@ -1,4 +1,4 @@
-from functions_ready import *
+from isVATCorrect import *
 
 assert isVATCorrectFR('FR46340793959') == True
 assert isVATCorrectFR('FR 83,404,833,048') == True
@@ -17,11 +17,13 @@ assert isVATCorrectPT('PT 507400011 ') == True
 assert isVATCorrectPT('PT507852605') == True
 assert isVATCorrectPT('PT508219612') == True
 
+assert isVATCorrectSE(136695975523) == True
 assert isVATCorrectSE('SE136695975523') == True
 assert isVATCorrectSE('SE202100509101 ') == True
 assert isVATCorrectSE('SE 556101935601') == True
 assert isVATCorrectSE('SE556785615701') == True
 
+assert isVATCorrectPL(6331637013) == True
 assert isVATCorrectPL('PL6331637013') == True
 assert isVATCorrectPL('PL768-000-24-66') == True
 assert isVATCorrectPL('PL 842-162-27-20') == True
