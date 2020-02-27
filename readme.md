@@ -2,17 +2,17 @@
 
 # correct vat numbers
 Functions to check is a VAT number is valid -- by calculating checksum.
-There is no online checking. Just calculating checksum offline. 
+There is NO ONLINE checking. Just calculating checksum.
 
 
 ## quick start
 Ready to use functions you will find in:
 ```
-isVATCorrect.py
+is_vat_correct.py
 ```
 
 
-## currently for countries: 
+## currently for countries:
 ```
 FR -- France
 GB -- Great Britain
@@ -23,15 +23,15 @@ SE -- Sweden
 
 
 ## usage
-No needed to be clear input. 
+No needed to be clear input.
 For example:
 ```
-isVATCorrectGB('123456789')                            # OK
-isVATCorrectGB('GB123456789')                          # OK
-isVATCorrectGB('GB 123-456-789')                       # OK
-isVATCorrectGB('%^^^GB-123,456/789%*')                 # OK
-isVATCorrectGB(123456789)                              # OK
-isVATCorrectFR('GB-123,456/789%*') # OK, but will return False, GB not match FR 
+is_vat_number_correct_gb('123456789')                            # OK
+is_vat_number_correct_gb('GB123456789')                          # OK
+is_vat_number_correct_gb('GB 123-456-789')                       # OK
+is_vat_number_correct_gb('%^^^GB-123,456/789%*')                 # OK
+is_vat_number_correct_gb(123456789)                              # OK
+is_vat_number_correct_fr('GB-123,456/789%*') # OK, but will return False, GB not match FR
 ```
 In **test_.py** some examples and asserts.
 
